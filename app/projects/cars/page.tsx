@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function GaragePage() {
   return (
     <>
-      <h3>every car i've ever owned</h3>
-      <div>
+      <h3>every car i&apos;ve ever owned</h3>
+      <div className="grid grid-cols-2 gap-5">
         <Car
           year={2004}
           make="Nissan"
@@ -10,6 +12,27 @@ export default function GaragePage() {
           trim="SL"
           displacementLiters={3.5}
           cylinderCount={6}
+          imgSrc="/img/cars/murano.png"
+        />
+
+        <Car
+          year={1995}
+          make="Ford"
+          model="F-150"
+          trim="XLT"
+          displacementLiters={3.7}
+          cylinderCount={6}
+          imgSrc="/img/cars/f150.png"
+        />
+
+        <Car
+          year={1991}
+          make="Honda"
+          model="Civic"
+          trim="DX Hatchback"
+          displacementLiters={1.5}
+          cylinderCount={4}
+          imgSrc="/img/cars/civic.png"
         />
         <Car
           year={2019}
@@ -18,31 +41,18 @@ export default function GaragePage() {
           trim="Police Interceptor"
           displacementLiters={4.9}
           cylinderCount={6}
+          imgSrc="/img/cars/explorer.png"
+          fate="sold on fb marketplace"
         />
         <Car
           year={1995}
-          make="Ford"
-          model="F-150"
-          trim="Police Interceptor"
-          displacementLiters={3.7}
-          cylinderCount={6}
-          fate="sold"
-        />
-        <Car
-          year={1995}
-          make="Mercedes-Benz"
+          make="Mercedes"
           model="C280"
+          trim="Base"
           displacementLiters={2.8}
           cylinderCount={6}
-          fate="sold"
-        />
-        <Car
-          year={1991}
-          make="Honda"
-          model="Civic"
-          trim="DX Hatchback"
-          displacementLiters={1.5}
-          cylinderCount={4}
+          imgSrc="/img/cars/c280.png"
+          fate="sold on fb marketplace"
         />
       </div>
     </>
@@ -56,7 +66,6 @@ interface CarProps {
   trim?: string;
   displacementLiters: number;
   cylinderCount: number;
-
   fate?: string;
   imgSrc?: string;
 }
@@ -72,8 +81,27 @@ function Car({
   imgSrc,
 }: CarProps) {
   return (
-    <div>
-      {year} {make} {model}
+    <div className="p-1 rounded-xs  ">
+      {imgSrc && (
+        <Image
+          alt=""
+          src={imgSrc}
+          className="aspect-video object-scale-down "
+          height={200}
+          width={200}
+        />
+      )}
+      <h2 className="mb-0!">
+        {year} {make} {model}
+      </h2>
+      <p className="opacity-70 font-normal! text-xs text-nowrap text-center! mb-2">
+        {trim} - {displacementLiters}L {cylinderCount} cyl
+      </p>
+      <p
+        className={`text-center! font-bold text-xs ${fate ? "bg-red-900" : "bg-green-800"}`}
+      >
+        {fate ? fate : "currently owned"}
+      </p>
     </div>
   );
 }
