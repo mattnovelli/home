@@ -12,15 +12,85 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@layer base {
+  html {
+    @apply text-lg;
+  }
+
+  body {
+    @apply leading-[150%];
+  }
+  h1 {
+    @apply text-[35.2px] font-bold;
+  }
+  h2 {
+    @apply font-bold my-5;
+  }
+  p {
+    @apply mb-4;
+  }
+  img {
+    @apply my-4;
+  }
+}
+
+html {
+  background-image: url("/dot-grid.jpg");
+  background-color: var(--background);
+  background-repeat: repeat;
+  color: var(--foreground);
+}
+
+/* Support class-based dark mode toggles too */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  background-image: url("/dot-grid-invert.jpg");
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+  html {
+    background-image: url("/dot-grid-invert.jpg");
+  }
 }
 
 body {
-  background: var(--background);
+  background: transparent;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
+}
+main {
+  max-width: 20em;
+  margin: 0 auto;
+}
+p {
+  text-align: justify;
+}
+
+/* Unvisited link */
+a:link {
+  color: #0000ee !important; /* Classic blue */
+  text-decoration: underline;
+}
+
+/* Visited link */
+a:visited {
+  color: #551a8b; /* Classic purple */
+  text-decoration: underline;
+}
+
+/* Mouse over link */
+a:hover {
+  color: #ee0000; /* Classic red, optional for hover effect */
+  text-decoration: underline;
+}
+
+/* Selected link */
+a:active {
+  color: #ee0000; /* Classic red */
+  text-decoration: underline;
 }
