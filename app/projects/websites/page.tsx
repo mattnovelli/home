@@ -13,7 +13,7 @@ export default function WebsitePage() {
         <WebsiteCard
           title="julia eversmann portfolio"
           description="graphic designer based in Illinois"
-          href="https://dearborn.cool"
+          href="https://juliaeversmann.com"
         />
         <WebsiteCard
           title="WPGU 107.1"

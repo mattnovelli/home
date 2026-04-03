@@ -73,7 +73,7 @@ p {
 
 /* Unvisited link */
 a:link {
-  color: #0000ee !important; /* Classic blue */
+  color: #0000ee; /* Classic blue */
   text-decoration: underline;
 }
 
@@ -93,4 +93,26 @@ a:hover {
 a:active {
   color: #ee0000; /* Classic red */
   text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  a:link {
+    color: #00c2ee;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #c384ff;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #ee0000;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #ee0000;
+    text-decoration: underline;
+  }
 }

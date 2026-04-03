@@ -5,6 +5,7 @@ export default function ProjectsList() {
     <nav className="mt-10">
       <h2>projects</h2>
       <ul className="mb-5">
+        <BracketLink title="cars" li isNew href="/projects/cars" />
         <BracketLink title="websites" li href="/projects/websites" />
         <BracketLink
           title="graphic design"
@@ -12,16 +13,15 @@ export default function ProjectsList() {
           href="/projects/graphic-design"
         />
 
-        <BracketLink title="cars" li isNew href="/projects/cars" />
-        <BracketLink
-          title="spotiamb install guide"
-          li
-          href="/projects/spotiamb"
-        />
         <BracketLink
           title="university projects"
           li
           href="/projects/university"
+        />
+        <BracketLink
+          title="spotiamb install guide"
+          li
+          href="/projects/spotiamb"
         />
 
         {/* <ProjectLink title="flourthprinter" isNew slug="flourthprinter" />
