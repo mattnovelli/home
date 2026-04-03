@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={` h-full antialiased `}>
-      <body className=" w-full text-center">
+      <body className=" w-full ">
         <Decorator />
         <Header />
         <main>{children}</main>

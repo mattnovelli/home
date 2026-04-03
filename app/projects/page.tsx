@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ProjectsList() {
   return (
-    <nav className="mt-10">
-      <h2>projects</h2>
+    <nav className="mt-10 text-center!">
+      <h2 className="">projects</h2>
       <ul className="mb-5">
         <BracketLink title="cars" li isNew href="/projects/cars" />
         <BracketLink title="websites" li href="/projects/websites" />

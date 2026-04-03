@@ -7,7 +7,7 @@ export default function AboutPage() {
       <h2>about</h2>
       <Image
         alt="A film photo taken at night with flash of myself inside a tent, holding up a bag of trail mix."
-        priority
+        preload
         src={"/tent.png"}
         width={272}
         height={204}

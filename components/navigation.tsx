@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <nav className="leading-5">
+    <nav className="leading-5 text-center!">
       <div className="my-5 font-bold" aria-hidden={true}>
         ↓↓↓↓↓↓↓↓
       </div>

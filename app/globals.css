@@ -2,35 +2,44 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @layer base {
   html {
-    @apply text-lg;
+    @apply text-[17.6px];
+    @apply leading-[24px]!;
   }
 
   body {
-    @apply leading-[150%];
   }
   h1 {
     @apply text-[35.2px] font-bold;
+    @apply leading-[normal];
   }
   h2 {
-    @apply font-bold my-5;
+    @apply font-bold my-5 text-xl;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-center;
   }
   p {
     @apply mb-4;
   }
   img {
     @apply my-4;
+  }
+
+  code {
+    @apply font-mono! text-sm;
   }
 }
 
@@ -43,18 +52,22 @@ html {
 
 /* Support class-based dark mode toggles too */
 html.dark {
-  --background: #0a0a0a;
+  --background: #000000;
   --foreground: #ededed;
   background-image: url("/dot-grid-invert.jpg");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
   html {
     background-image: url("/dot-grid-invert.jpg");
+  }
+
+  em {
+    color: black !important;
   }
 }
 
@@ -64,11 +77,35 @@ body {
   font-family: "Times New Roman", Times, serif !important;
 }
 main {
-  max-width: 20em;
+  max-width: 33em;
   margin: 0 auto;
 }
 p {
   text-align: justify;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+figcaption {
+  font-family: serif;
+  color: dimgray;
+  font-size: 70% !important;
+  max-width: 15em;
+  line-height: normal;
+}
+
+em {
+  background: #fefd80;
+  border: 20px solid #fefd80;
+  float: left;
+  text-align: left;
+  font-style: normal;
+  margin-bottom: 20px;
 }
 
 /* Unvisited link */

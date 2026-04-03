@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="mx-auto ">
       <Link className="text-foreground! no-underline!" href={"/"}>
-        <h1 className="">
+        <h1>
           <span aria-hidden className="mr-2">
             &gt;&gt;
           </span>

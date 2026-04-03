@@ -8,7 +8,7 @@ export default function ContactPage() {
       width={352}
       height={35}
       priority
-      className="dark:invert my-10"
+      className="dark:invert my-10! m-auto"
     />
   );
 }

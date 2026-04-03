@@ -3,7 +3,9 @@ import Image from "next/image";
 export default function GaragePage() {
   return (
     <>
-      <h3>every car i&apos;ve ever owned</h3>
+      <h1 className="text-lg! font-normal mb-5">
+        every car i&apos;ve ever owned
+      </h1>
       <div className="grid grid-cols-2 gap-5">
         <Car
           year={2004}
@@ -81,7 +83,7 @@ function Car({
   imgSrc,
 }: CarProps) {
   return (
-    <div className="p-1 rounded-xs  ">
+    <div className="p-1 rounded-xs  m-auto ">
       {imgSrc && (
         <Image
           alt=""
