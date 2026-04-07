@@ -93,7 +93,7 @@ function Car({
           width={200}
         />
       )}
-      <h2 className="mb-0!">
+      <h2 className="mb-0! leading-5 text-2xl!">
         {year} {make} {model}
       </h2>
       <p className="opacity-70 font-normal! text-xs text-nowrap text-center! mb-2">

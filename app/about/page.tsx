@@ -5,14 +5,17 @@ export default function AboutPage() {
   return (
     <div>
       <h2>about</h2>
-      <Image
-        alt="A film photo taken at night with flash of myself inside a tent, holding up a bag of trail mix."
-        preload
-        src={"/tent.png"}
-        width={272}
-        height={204}
-        className="mx-auto"
-      />
+      <figure>
+        <Image
+          alt="A film photo taken at night with flash of myself inside a tent, holding up a bag of trail mix."
+          preload
+          src={"/tent.png"}
+          width={272}
+          height={204}
+          className="mx-auto"
+        />
+        <figcaption>Me, camping</figcaption>
+      </figure>
       <p>
         Hi, I'm matt novelli. I'm currently working as a software developer at
         the Champaign-Urbana Mass Transit District.

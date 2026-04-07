@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Spotiamb() {
   return (
-    <div className="bg-background p-3 m-3">
+    <div className="bg-background p-3 m-3 ">
       <h1>Reviving Winamp for Spotify: visualizers, equalizers, and themes</h1>
       <hr className="border-dashed my-5" />
       <p>

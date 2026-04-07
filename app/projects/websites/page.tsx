@@ -11,6 +11,7 @@ export default function WebsitePage() {
           description="Small music electronics business in Urbana."
           href="https://dearborn.cool"
           imgSrc="/img/websites/dbfx.svg"
+          className="bg-black dark:bg-transparent!"
         />
         <WebsiteCard
           title="julia eversmann"
@@ -34,18 +35,20 @@ function WebsiteCard({
   description,
   href,
   imgSrc,
+  className,
 }: {
   title: string;
   description: string;
   href: string;
   imgSrc: string;
+  className?: string;
 }) {
   return (
     <Link
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-full  text-sm h-25  flex flex-row border no-underline! text-foreground!  leading-normal"
+      className={`w-full  text-sm h-25  flex flex-row border no-underline! text-foreground!  leading-normal ${className}`}
     >
       <Image
         src={imgSrc}

@@ -7,27 +7,18 @@ export default function ProjectsList() {
       <ul className="mb-5">
         <BracketLink title="cars" li isNew href="/projects/cars" />
         <BracketLink title="websites" li href="/projects/websites" />
-        <BracketLink
-          title="graphic design"
-          li
-          href="/projects/graphic-design"
-        />
+        <BracketLink title="graphic design" li href="/projects/design" />
 
-        <BracketLink
+        {/* <BracketLink
           title="university projects"
           li
           href="/projects/university"
-        />
+        /> */}
         <BracketLink
           title="spotiamb install guide"
           li
           href="/projects/spotiamb"
         />
-
-        {/* <ProjectLink title="flourthprinter" isNew slug="flourthprinter" />
-        <ProjectLink title="CUM_MATRIX" isNew slug="CUM_MATRIX" />
-        <ProjectLink title="verifried" isNew slug="verifried" /> */}
-        {/* <ProjectLink title="video production" isNew slug="video-production" /> */}
       </ul>
 
       <BracketLink title="back to home" href="/" />

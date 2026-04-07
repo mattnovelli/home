@@ -41,6 +41,10 @@
   code {
     @apply font-mono! text-sm;
   }
+
+  figure {
+    @apply flex flex-col items-center my-5;
+  }
 }
 
 html {
@@ -77,18 +81,11 @@ body {
   font-family: "Times New Roman", Times, serif !important;
 }
 main {
-  max-width: 33em;
+  max-width: 20em;
   margin: 0 auto;
 }
 p {
   text-align: justify;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
 }
 
 figcaption {

@@ -7,7 +7,7 @@ export default function ContactPage() {
       src={"/myemail.png"}
       width={352}
       height={35}
-      priority
+      preload
       className="dark:invert my-10! m-auto"
     />
   );
