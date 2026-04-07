@@ -1,5 +1,11 @@
+import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "about",
+  description: "about matt novelli",
+};
 
 export default function AboutPage() {
   return (

@@ -1,5 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "websites",
+  description: "websites created by matt novelli",
+};
 
 export default function WebsitePage() {
   return (

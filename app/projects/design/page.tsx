@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "graphic design",
+  description: "small portfolio of graphic design work by matt novelli",
+};
+
 export default function DesignPage() {
   const designImages = [
     "DBAE.png",

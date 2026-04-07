@@ -1,9 +1,21 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Spotiamb tutorial",
+  description: "A quick guide on how to install Spotiamb.",
+  icons: {
+    icon: "/img/winamp.ico",
+  },
+};
 
 export default function Spotiamb() {
   return (
     <div className="bg-background p-3 m-3 ">
-      <h1>Reviving Winamp for Spotify: visualizers, equalizers, and themes</h1>
+      <style>{`main { max-width: 33em; }`}</style>
+      <h1 className="text-left!">
+        Reviving Winamp for Spotify: visualizers, equalizers, and themes
+      </h1>
       <hr className="border-dashed my-5" />
       <p>
         Music streaming has changed how people control the music they listen to.
