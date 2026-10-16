@@ -23,8 +23,7 @@ export default function AboutPage() {
         <figcaption>Me, camping</figcaption>
       </figure>
       <p>
-        Hi, I'm matt novelli. I'm currently working as a software developer at
-        the Champaign-Urbana Mass Transit District.
+        Hi, I'm matt novelli. I'm currently working as a full-stack software engineer at Actionfigure. Previously, I worked at the Champaign-Urbana Mass Transit District.
       </p>
       <p>
         I enjoy rollerblading, eating, and ocassionally both at the same time.
